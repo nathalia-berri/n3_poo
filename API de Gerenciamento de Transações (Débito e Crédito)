@@ -2,6 +2,19 @@
 API de Gerenciamento de Transações (Débito e Crédito)
 Esta aplicação em Java permite o gerenciamento de transações financeiras, como débito e crédito, realizando operações CRUD em um banco de dados MySQL. A API oferece um sistema simples para cadastrar, listar, atualizar e excluir transações financeiras, com a adição automática de prefixos ("DEB" para débito e "CRE" para crédito) aos códigos das transações.
 
+Regras de Negócio
+As regras de negócio são as condições ou lógicas específicas que o sistema deve seguir para funcionar corretamente.
+Classificação de Transações:
+Cada transação deve ser classificada como débito ou crédito.
+Prefixo no Código:
+O sistema deve adicionar automaticamente o prefixo "DEB" para transações de débito e "CRE" para transações de crédito no atributo código.
+Validação do Valor:
+O valor das transações deve ser maior que zero.
+CRUD Completo:
+Deve ser possível criar, listar, atualizar e excluir transações.
+Listagem Separada:
+O sistema deve permitir que o usuário liste transações de crédito e débito separadamente ou visualize todas.
+
 Funcionalidades
 Cadastrar Transação: Permite o cadastro de novas transações financeiras, especificando o tipo (débito ou crédito), a descrição e o valor da transação.
 Listar Transações: Exibe todas as transações registradas no sistema, com detalhes do código, descrição, valor e tipo (débito ou crédito).
