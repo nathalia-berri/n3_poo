@@ -30,11 +30,11 @@ Scanner: Para entrada de dados pelo usuário no console.
 Requisitos
 Antes de executar a aplicação, é necessário ter o MySQL configurado em sua máquina, com a tabela transacoes criada. Além disso, o driver JDBC do MySQL deve ser adicionado ao projeto. Recomenda-se o uso do MySQL Connector/J versão 9.1.0 ou superior.
 
-Criando tabela no Banco de Dados XAMPP MySQL:
-mysql -u root
-CREATE DATABASE transacaodb;
-USE transacaodb;
-CREATE TABLE transacoes (
+Criando tabela no Banco de Dados XAMPP MySQL
+# mysql -u root
+# CREATE DATABASE transacaodb;
+# USE transacaodb;
+# CREATE TABLE transacoes (
 codigo VARCHAR(50) PRIMARY KEY, 
 descricao VARCHAR(255) NOT NULL, 
 valor DOUBLE NOT NULL, 
